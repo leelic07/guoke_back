@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "guoke_back",
+    "script": "production.js",
+    "cwd": "E:\Project\国科官网\guoke_back",
+    "exec_mode": "fork",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}
