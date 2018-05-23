@@ -35,6 +35,10 @@ module.exports = [
     handle: 'router',
     options: {}
   },
+  {
+    handle: 'multer',
+    options: {}
+  },
   'logic',
   'controller'
 ];

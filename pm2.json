@@ -2,7 +2,11 @@
   "apps": [{
     "name": "guoke_back",
     "script": "production.js",
+<<<<<<< HEAD
     "cwd": "D:\Project\国科官网\guoke_back",
+=======
+    "cwd": "E:\Project\国科官网\guoke_back",
+>>>>>>> 1c377f0e0249a3c775d4ea43bb5aea2b4d41b658
     "exec_mode": "fork",
     "max_memory_restart": "1G",
     "autorestart": true,

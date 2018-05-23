@@ -2,7 +2,7 @@
   "name": "guoke_back",
   "description": "application created by thinkjs",
   "version": "1.0.0",
-  "author": "leelic07 <lichengchao1@sina.cn>",
+  "author": "leelic07 <330314702@qq.com>",
   "scripts": {
     "start": "node development.js",
     "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
@@ -23,6 +23,7 @@
     "thinkjs": "^3.0.0"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "babel-cli": "^6.24.1",
     "babel-preset-think-node": "^1.0.0",
     "node-notifier": "^5.0.2",
@@ -33,6 +34,19 @@
     "eslint-config-think": "^1.0.0",
     "ava": "^0.18.0",
     "nyc": "^7.0.0"
+=======
+    "ava": "^0.18.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-think-node": "^1.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-think": "^1.0.0",
+    "koa-multer": "^1.0.2",
+    "node-notifier": "^5.0.2",
+    "nyc": "^7.0.0",
+    "think-babel": "^1.0.3",
+    "think-inspect": "0.0.2",
+    "think-watcher": "^3.0.0"
+>>>>>>> 1c377f0e0249a3c775d4ea43bb5aea2b4d41b658
   },
   "repository": "",
   "license": "MIT",
@@ -44,6 +58,7 @@
     "metadata": {
       "name": "guoke_back",
       "description": "application created by thinkjs",
+<<<<<<< HEAD
       "author": "leelic07 <lichengchao1@sina.cn>",
       "babel": true
     },
@@ -54,3 +69,15 @@
     "isMultiModule": false
   }
 }
+=======
+      "author": "leelic07 <330314702@qq.com>",
+      "babel": true
+    },
+    "projectName": "guoke_back",
+    "templateName": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\think-cli\\default_template",
+    "cacheTemplatePath": "C:\\Users\\Administrator\\.think-templates\\C--Users-Administrator-AppData-Roaming-npm-node_modules-think-cli-default_template",
+    "clone": false,
+    "isMultiModule": false
+  }
+}
+>>>>>>> 1c377f0e0249a3c775d4ea43bb5aea2b4d41b658
