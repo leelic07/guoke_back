@@ -37,7 +37,9 @@ module.exports = [
   },
   {
     handle: 'multer',
-    options: {}
+    options: {},
+    enable: true,
+    match: '/upload'
   },
   'logic',
   'controller'

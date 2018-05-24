@@ -23,18 +23,6 @@
     "thinkjs": "^3.0.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "babel-cli": "^6.24.1",
-    "babel-preset-think-node": "^1.0.0",
-    "node-notifier": "^5.0.2",
-    "think-inspect": "0.0.2",
-    "think-babel": "^1.0.3",
-    "think-watcher": "^3.0.0",
-    "eslint": "^4.2.0",
-    "eslint-config-think": "^1.0.0",
-    "ava": "^0.18.0",
-    "nyc": "^7.0.0"
-=======
     "ava": "^0.18.0",
     "babel-cli": "^6.24.1",
     "babel-preset-think-node": "^1.0.0",
@@ -46,7 +34,6 @@
     "think-babel": "^1.0.3",
     "think-inspect": "0.0.2",
     "think-watcher": "^3.0.0"
->>>>>>> 1c377f0e0249a3c775d4ea43bb5aea2b4d41b658
   },
   "repository": "",
   "license": "MIT",
@@ -58,18 +45,6 @@
     "metadata": {
       "name": "guoke_back",
       "description": "application created by thinkjs",
-<<<<<<< HEAD
-      "author": "leelic07 <lichengchao1@sina.cn>",
-      "babel": true
-    },
-    "projectName": "guoke_back",
-    "templateName": "C:\\Users\\33031\\AppData\\Roaming\\npm\\node_modules\\think-cli\\default_template",
-    "cacheTemplatePath": "C:\\Users\\33031\\.think-templates\\C--Users-33031-AppData-Roaming-npm-node_modules-think-cli-default_template",
-    "clone": false,
-    "isMultiModule": false
-  }
-}
-=======
       "author": "leelic07 <330314702@qq.com>",
       "babel": true
     },
@@ -80,4 +55,3 @@
     "isMultiModule": false
   }
 }
->>>>>>> 1c377f0e0249a3c775d4ea43bb5aea2b4d41b658

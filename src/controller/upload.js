@@ -2,7 +2,7 @@ const Base = require('./base.js');
 // const fs = require('fs');
 
 module.exports = class extends Base {
-  async uploadAction() {
+  async indexAction() {
     // const themefile = this.file('avatar');
     // const filepath = themefile.path;// 为防止上传的时候因文件名重复而覆盖同名已上传文件，path是MD5方式产生的随机名称
     // const uploadpath = think.ROOT_PATH + '/static/theme';
@@ -14,12 +14,15 @@ module.exports = class extends Base {
     // // 将上传的文件（路径为filepath的文件）移动到第二个参数所在的路径，并改为第二个参数的文件名。
     // fs.renameSync(filepath, uploadpath + '/' + basename);
     // themefile.path = uploadpath + '/' + basename;
-
     // // 读取压缩文件信息存数据库
     // const zip = new JSZip();
-
     // this.success(themefile);
-    console.log(this.ctx.req.file);
-    this.success(this.ctx.req.file, '上传成功');
+    // this.body = this.ctx.req.file;
+    this.body = {
+      msg: '123',
+      file: this.ctx.req.file
+    };
+    // console.log(this.ctx.req.file);
+    // this.success(this.ctx.req.file, '上传成功');
   }
 };
