@@ -28,18 +28,13 @@ module.exports = [
     handle: 'payload',
     options: {
       keepExtensions: true,
-      limit: '5mb'
+      limit: '5mb',
+      uploadDir: 'temp'
     }
   },
   {
     handle: 'router',
     options: {}
-  },
-  {
-    handle: 'multer',
-    options: {},
-    enable: true,
-    match: '/upload'
   },
   'logic',
   'controller'
