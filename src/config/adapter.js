@@ -27,24 +27,43 @@ exports.cache = {
  * model adapter config
  * @type {Object}
  */
+// exports.model = {
+//   type: 'mysql',
+//   common: {
+//     logConnect: isDev,
+//     logSql: isDev,
+//     logger: msg => think.logger.info(msg)
+//   },
+//   mysql: {
+//     handle: mysql,
+//     database: 'guoke',
+//     prefix: 'think_',
+//     encoding: 'utf8',
+//     host: 'localhost',
+//     port: 3306,
+//     user: 'root',
+//     password: 'root',
+//     dateStrings: true,
+//     connectionLimit: 5
+//   }
+// };
+
 exports.model = {
-  type: 'mysql',
-  common: {
-    logConnect: isDev,
-    logSql: isDev,
-    logger: msg => think.logger.info(msg)
-  },
-  mysql: {
-    handle: mysql,
+  type: 'sequel',
+  sequel: {
+    prefix: 'think_',
+    logConnect: false,
     database: 'guoke',
-    prefix: '',
-    encoding: 'utf8',
-    host: 'localhost',
-    port: 3306,
     user: 'root',
-    password: '',
-    dateStrings: true,
-    connectionLimit: 5
+    password: 'root',
+    options: {
+      host: '127.0.0.1',
+      dialect: 'mysql',
+      logging: false,
+      define: {
+        timestamps: false
+      }
+    }
   }
 };
 

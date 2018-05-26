@@ -9,9 +9,10 @@ module.exports = class extends Base {
   }
 
   async login(user) {
-    const model = this.model('users');
+    // const model = this.model('users');
+    const sequel = this.sequel('users');
     user.password = think.md5(user.password);
-    const result = await model.where(user).find();
+    const result = await sequel.findAll();
     return result;
   }
 };

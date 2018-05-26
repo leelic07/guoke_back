@@ -1,31 +1,25 @@
-module.exports = class extends think.Model {
+const Base = require('./base.js');
+const { INTEGER, STRING, DATE } = think.Sequel.Sequel;
+
+module.exports = class extends Base {
   get scheme() {
     return {
-      _id: {
-        type: 'int',
-        primary: true,
-        autoIncrement: true
+      attributes: {
+        _id: {
+          type: INTEGER,
+          primaryKey: true,
+          autoIncrement: true
+        },
+        userName: STRING,
+        password: STRING,
+        sysFlag: INTEGER,
+        updatedAt: DATE,
+        createdAt: DATE
       },
-      userName: {
-        type: 'varchar(10)',
-        default: '',
-        unique: true
-      },
-      password: {
-        type: 'varchar(10)',
-        default: ''
-      },
-      createdAt: {
-        type: 'datetime',
-        default: () => think.datetime()
-      },
-      updatedAt: {
-        type: 'datetime',
-        default: () => think.datetime()
-      },
-      sysFlag: {
-        type: 'int',
-        default: 1
+      options: {
+        timestamps: true,
+        freezeTableName: true,
+        tableName: 'users'
       }
     };
   }
